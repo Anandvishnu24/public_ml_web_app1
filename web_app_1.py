@@ -15,7 +15,7 @@ Created on Thu Jul 18 18:56:03 2024
 import numpy as np
 import pickle
 import streamlit as st
- import os
+import os
 
 # Define paths to your model and scaler
 model_path = os.path.join(os.getcwd(), 'trained_model (2).sav')
