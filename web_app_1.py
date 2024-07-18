@@ -18,8 +18,8 @@ import streamlit as st
 
 
 
-loaded_model = pickle.load(open('trained_model (2).sav', 'rb'))
-scaler = pickle.load(open('scaler.sav', 'rb'))
+loaded_model = pickle.load(open('/mount/src/public_ml_web_app1/trained_model (2).sav', 'rb'))
+scaler = pickle.load(open('/mount/src/public_ml_web_app1/scaler.sav', 'rb'))
 
 
 st.title('Diabetes Prediction using Machine Learning')
