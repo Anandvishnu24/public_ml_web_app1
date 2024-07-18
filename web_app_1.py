@@ -15,7 +15,7 @@ Created on Thu Jul 18 18:56:03 2024
 import numpy as np
 import pickle
 import streamlit as st
-pip install -r /mount/src/public_ml_web_app1/requirements.txt
+
 
 
 loaded_model = pickle.load(open('trained_model (2).sav', 'rb'))
