@@ -15,16 +15,16 @@ Created on Thu Jul 18 18:56:03 2024
 import numpy as np
 import pickle
 import streamlit as st
-from sklearn.preprocessing import StandardScaler
 
-# Load the model and scaler
+
+
 loaded_model = pickle.load(open('B:/ML/trained_model (2).sav', 'rb'))
 scaler = pickle.load(open('B:/ML/scaler.sav', 'rb'))
 
-# Streamlit title
+
 st.title('Diabetes Prediction using Machine Learning')
 
-# Input fields
+
 Pregnancies = st.number_input('Number of Pregnancies', 0)
 Glucose = st.number_input('Glucose Level', 0)
 BloodPressure = st.number_input('Blood Pressure', 0)
