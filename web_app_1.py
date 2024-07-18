@@ -39,7 +39,7 @@ input_data_array = np.asarray(input_data)
 input_reshape=input_data_array.reshape(1,-1)
 
 
-sta_data = scaler.transform(input_data_array)
+sta_data = scaler.transform(input_reshape)
 prediction = loaded_model.predict(sta_data)
 if st.button('Diabetes Test Result'):
     if prediction[0] == 1:
