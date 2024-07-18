@@ -15,11 +15,18 @@ Created on Thu Jul 18 18:56:03 2024
 import numpy as np
 import pickle
 import streamlit as st
- 
+ import os
+
+# Define paths to your model and scaler
+model_path = os.path.join(os.getcwd(), 'trained_model (2).sav')
+scaler_path = os.path.join(os.getcwd(), 'scaler.sav')
+
+# Load the model and scaler
+loaded_model = pickle.load(open(model_path, 'rb'))
+scaler = pickle.load(open(scaler_path, 'rb'))
 
 
-loaded_model = pickle.load(open('trained_model (2).sav', 'rb'))
-scaler = pickle.load(open('scaler.sav', 'rb'))
+
 
 
 st.title('Diabetes Prediction using Machine Learning')
