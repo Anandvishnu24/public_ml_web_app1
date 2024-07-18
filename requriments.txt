@@ -2,8 +2,5 @@ numpy==2.0.0
 pickle-mixin==1.0.2
 streamlit==1.36.0
 scikit-learn==1.1.2 
-rm -rf venv/
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+
 
